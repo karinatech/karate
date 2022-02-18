@@ -7412,3 +7412,73 @@ classpath:examples/users/users.feature:37
 ]
  
 11:06:32.491 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/users/users.feature
+11:58:03.255 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+11:58:03.260 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1645221483260
+11:58:04.016 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+11:58:04.344 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonmock.hackerrank.com/api/iot_devices/search?status=RUNNING
+1 > Host: jsonmock.hackerrank.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 > Accept-Encoding: gzip,deflate
+
+
+11:58:05.567 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1221
+1 < 200
+1 < Date: Fri, 18 Feb 2022 21:58:05 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1809
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"711-USy0skmHxuKHl2gdjVKkpw"
+{"page":1,"per_page":10,"total":35,"total_pages":4,"data":[{"id":4,"timestamp":1554240798496,"status":"RUNNING","operatingParams":{"rotorSpeed":2967,"slack":37.32,"rootThreshold":0},"asset":{"id":2,"alias":"Main Rotor Shaft"}},{"id":11,"timestamp":1565193225660,"status":"RUNNING","operatingParams":{"rotorSpeed":2363,"slack":63.07,"rootThreshold":0},"asset":{"id":4,"alias":"Secondary Rotor"},"parent":{"id":2,"alias":"Main Rotor Shaft"}},{"id":14,"timestamp":1566352838102,"status":"RUNNING","operatingParams":{"rotorSpeed":1536,"slack":86.52,"rootThreshold":0},"asset":{"id":2,"alias":"Main Rotor Shaft"}},{"id":15,"timestamp":1565008649102,"status":"RUNNING","operatingParams":{"rotorSpeed":4114,"slack":45.38,"rootThreshold":0},"asset":{"id":1,"alias":"Axle Motor"},"parent":null},{"id":19,"timestamp":1546917341408,"status":"RUNNING","operatingParams":{"rotorSpeed":2673,"slack":16.3,"rootThreshold":0},"asset":{"id":2,"alias":"Main Rotor Shaft"}},{"id":23,"timestamp":1554478379196,"status":"RUNNING","operatingParams":{"rotorSpeed":2319,"slack":91.81,"rootThreshold":0},"asset":{"id":1,"alias":"Axle Motor"},"parent":null},{"id":27,"timestamp":1565715044200,"status":"RUNNING","operatingParams":{"rotorSpeed":2257,"slack":65.91,"rootThreshold":0},"asset":{"id":7,"alias":"Counter Blades"}},{"id":28,"timestamp":1563744781223,"status":"RUNNING","operatingParams":{"rotorSpeed":4056,"slack":40.1,"rootThreshold":0},"asset":{"id":6,"alias":"Penstock Guage"}},{"id":29,"timestamp":1551346719679,"status":"RUNNING","operatingParams":{"rotorSpeed":2679,"slack":58.29,"rootThreshold":0},"asset":{"id":7,"alias":"Counter Blades"}},{"id":40,"timestamp":1548040103302,"status":"RUNNING","operatingParams":{"rotorSpeed":1807,"slack":34.12,"rootThreshold":0},"asset":{"id":1,"alias":"Axle Motor"},"parent":null}]}
+11:58:05.685 [pool-1-thread-1] INFO  com.intuit.karate - [print] [
+  2967,
+  2363,
+  1536,
+  4114,
+  2673,
+  2319,
+  2257,
+  4056,
+  2679,
+  1807
+]
+ 
+11:58:06.100 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/demo/invokeJavascript.feature
+12:02:11.751 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+12:02:11.757 [main] INFO  com.intuit.karate.Suite - backed up existing 'target/karate-reports' dir to: target/karate-reports_1645221731756
+12:02:12.513 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+12:02:12.763 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://jsonmock.hackerrank.com/api/iot_devices/search?status=RUNNING
+1 > Host: jsonmock.hackerrank.com
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 > Accept-Encoding: gzip,deflate
+
+
+12:02:14.189 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 1423
+1 < 200
+1 < Date: Fri, 18 Feb 2022 22:02:14 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Content-Length: 1809
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < ETag: W/"711-USy0skmHxuKHl2gdjVKkpw"
+{"page":1,"per_page":10,"total":35,"total_pages":4,"data":[{"id":4,"timestamp":1554240798496,"status":"RUNNING","operatingParams":{"rotorSpeed":2967,"slack":37.32,"rootThreshold":0},"asset":{"id":2,"alias":"Main Rotor Shaft"}},{"id":11,"timestamp":1565193225660,"status":"RUNNING","operatingParams":{"rotorSpeed":2363,"slack":63.07,"rootThreshold":0},"asset":{"id":4,"alias":"Secondary Rotor"},"parent":{"id":2,"alias":"Main Rotor Shaft"}},{"id":14,"timestamp":1566352838102,"status":"RUNNING","operatingParams":{"rotorSpeed":1536,"slack":86.52,"rootThreshold":0},"asset":{"id":2,"alias":"Main Rotor Shaft"}},{"id":15,"timestamp":1565008649102,"status":"RUNNING","operatingParams":{"rotorSpeed":4114,"slack":45.38,"rootThreshold":0},"asset":{"id":1,"alias":"Axle Motor"},"parent":null},{"id":19,"timestamp":1546917341408,"status":"RUNNING","operatingParams":{"rotorSpeed":2673,"slack":16.3,"rootThreshold":0},"asset":{"id":2,"alias":"Main Rotor Shaft"}},{"id":23,"timestamp":1554478379196,"status":"RUNNING","operatingParams":{"rotorSpeed":2319,"slack":91.81,"rootThreshold":0},"asset":{"id":1,"alias":"Axle Motor"},"parent":null},{"id":27,"timestamp":1565715044200,"status":"RUNNING","operatingParams":{"rotorSpeed":2257,"slack":65.91,"rootThreshold":0},"asset":{"id":7,"alias":"Counter Blades"}},{"id":28,"timestamp":1563744781223,"status":"RUNNING","operatingParams":{"rotorSpeed":4056,"slack":40.1,"rootThreshold":0},"asset":{"id":6,"alias":"Penstock Guage"}},{"id":29,"timestamp":1551346719679,"status":"RUNNING","operatingParams":{"rotorSpeed":2679,"slack":58.29,"rootThreshold":0},"asset":{"id":7,"alias":"Counter Blades"}},{"id":40,"timestamp":1548040103302,"status":"RUNNING","operatingParams":{"rotorSpeed":1807,"slack":34.12,"rootThreshold":0},"asset":{"id":1,"alias":"Axle Motor"},"parent":null}]}
+12:02:14.296 [pool-1-thread-1] INFO  com.intuit.karate - [print] [
+  2967,
+  2363,
+  1536,
+  4114,
+  2673,
+  2319,
+  2257,
+  4056,
+  2679,
+  1807
+]
+ 
+12:02:14.877 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/demo/invokeJavascript.feature
