@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.users.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-02-17 12:37:56 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>get data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">sample karate test script</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">get data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1893</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonmock.hackerrank.com/api/iot_devices/search?status=RUNNING&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">12:37:54.093 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1883</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">12:37:54.396 request:
+1 &gt; GET https://jsonmock.hackerrank.com/api/iot_devices/search?status=RUNNING
+1 &gt; Host: jsonmock.hackerrank.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:37:55.970 response time in milliseconds: 1570
+1 &lt; 200
+1 &lt; Date: Thu, 17 Feb 2022 22:37:55 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1809
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;711-USy0skmHxuKHl2gdjVKkpw&quot;
+{&quot;page&quot;:1,&quot;per_page&quot;:10,&quot;total&quot;:35,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:4,&quot;timestamp&quot;:1554240798496,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2967,&quot;slack&quot;:37.32,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:11,&quot;timestamp&quot;:1565193225660,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2363,&quot;slack&quot;:63.07,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:4,&quot;alias&quot;:&quot;Secondary Rotor&quot;},&quot;parent&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:14,&quot;timestamp&quot;:1566352838102,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:1536,&quot;slack&quot;:86.52,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:15,&quot;timestamp&quot;:1565008649102,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:4114,&quot;slack&quot;:45.38,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:1,&quot;alias&quot;:&quot;Axle Motor&quot;},&quot;parent&quot;:null},{&quot;id&quot;:19,&quot;timestamp&quot;:1546917341408,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2673,&quot;slack&quot;:16.3,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:23,&quot;timestamp&quot;:1554478379196,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2319,&quot;slack&quot;:91.81,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:1,&quot;alias&quot;:&quot;Axle Motor&quot;},&quot;parent&quot;:null},{&quot;id&quot;:27,&quot;timestamp&quot;:1565715044200,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2257,&quot;slack&quot;:65.91,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:7,&quot;alias&quot;:&quot;Counter Blades&quot;}},{&quot;id&quot;:28,&quot;timestamp&quot;:1563744781223,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:4056,&quot;slack&quot;:40.1,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:6,&quot;alias&quot;:&quot;Penstock Guage&quot;}},{&quot;id&quot;:29,&quot;timestamp&quot;:1551346719679,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2679,&quot;slack&quot;:58.29,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:7,&quot;alias&quot;:&quot;Counter Blades&quot;}},{&quot;id&quot;:40,&quot;timestamp&quot;:1548040103302,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:1807,&quot;slack&quot;:34.12,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:1,&quot;alias&quot;:&quot;Axle Motor&quot;},&quot;parent&quot;:null}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response.data</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">12:37:56.022 [print] [
+  {
+    &quot;id&quot;: 4,
+    &quot;timestamp&quot;: 1554240798496,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 2967,
+      &quot;slack&quot;: 37.32,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 2,
+      &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 11,
+    &quot;timestamp&quot;: 1565193225660,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 2363,
+      &quot;slack&quot;: 63.07,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 4,
+      &quot;alias&quot;: &quot;Secondary Rotor&quot;
+    },
+    &quot;parent&quot;: {
+      &quot;id&quot;: 2,
+      &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 14,
+    &quot;timestamp&quot;: 1566352838102,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 1536,
+      &quot;slack&quot;: 86.52,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 2,
+      &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 15,
+    &quot;timestamp&quot;: 1565008649102,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 4114,
+      &quot;slack&quot;: 45.38,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 1,
+      &quot;alias&quot;: &quot;Axle Motor&quot;
+    },
+    &quot;parent&quot;: null
+  },
+  {
+    &quot;id&quot;: 19,
+    &quot;timestamp&quot;: 1546917341408,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 2673,
+      &quot;slack&quot;: 16.3,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 2,
+      &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;timestamp&quot;: 1554478379196,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 2319,
+      &quot;slack&quot;: 91.81,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 1,
+      &quot;alias&quot;: &quot;Axle Motor&quot;
+    },
+    &quot;parent&quot;: null
+  },
+  {
+    &quot;id&quot;: 27,
+    &quot;timestamp&quot;: 1565715044200,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 2257,
+      &quot;slack&quot;: 65.91,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 7,
+      &quot;alias&quot;: &quot;Counter Blades&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 28,
+    &quot;timestamp&quot;: 1563744781223,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 4056,
+      &quot;slack&quot;: 40.1,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 6,
+      &quot;alias&quot;: &quot;Penstock Guage&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 29,
+    &quot;timestamp&quot;: 1551346719679,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 2679,
+      &quot;slack&quot;: 58.29,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 7,
+      &quot;alias&quot;: &quot;Counter Blades&quot;
+    }
+  },
+  {
+    &quot;id&quot;: 40,
+    &quot;timestamp&quot;: 1548040103302,
+    &quot;status&quot;: &quot;RUNNING&quot;,
+    &quot;operatingParams&quot;: {
+      &quot;rotorSpeed&quot;: 1807,
+      &quot;slack&quot;: 34.12,
+      &quot;rootThreshold&quot;: 0
+    },
+    &quot;asset&quot;: {
+      &quot;id&quot;: 1,
+      &quot;alias&quot;: &quot;Axle Motor&quot;
+    },
+    &quot;parent&quot;: null
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

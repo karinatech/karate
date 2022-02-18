@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>examples.users.users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-02-17 11:24:39 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>get data</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">examples/users/users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">sample karate test script</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">get data</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1592</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://jsonmock.hackerrank.com/api/iot_devices/search?status=RUNNING&amp;page=2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.5">11:24:38.207 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1581</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">11:24:38.555 request:
+1 &gt; GET https://jsonmock.hackerrank.com/api/iot_devices/search?status=RUNNING&amp;page=2
+1 &gt; Host: jsonmock.hackerrank.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/14)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+11:24:39.779 response time in milliseconds: 1221
+1 &lt; 200
+1 &lt; Date: Thu, 17 Feb 2022 21:24:39 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 1892
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;764-E68DjJNRHc1MOqw6rkxQyw&quot;
+{&quot;page&quot;:2,&quot;per_page&quot;:10,&quot;total&quot;:35,&quot;total_pages&quot;:4,&quot;data&quot;:[{&quot;id&quot;:42,&quot;timestamp&quot;:1565692775077,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:3036,&quot;slack&quot;:78.6,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:0,&quot;alias&quot;:&quot;Primary Rotor&quot;},&quot;parent&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:46,&quot;timestamp&quot;:1552562195715,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2281,&quot;slack&quot;:55.14,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:7,&quot;alias&quot;:&quot;Counter Blades&quot;}},{&quot;id&quot;:47,&quot;timestamp&quot;:1547224303019,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2044,&quot;slack&quot;:53.54,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:7,&quot;alias&quot;:&quot;Counter Blades&quot;}},{&quot;id&quot;:49,&quot;timestamp&quot;:1560064864330,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:4721,&quot;slack&quot;:90.46,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:3,&quot;alias&quot;:&quot;Secondary Rotor Shaft&quot;},&quot;parent&quot;:{&quot;id&quot;:7,&quot;alias&quot;:&quot;Counter Blades&quot;}},{&quot;id&quot;:51,&quot;timestamp&quot;:1554411734690,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:2957,&quot;slack&quot;:87.8,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:4,&quot;alias&quot;:&quot;Secondary Rotor&quot;},&quot;parent&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:54,&quot;timestamp&quot;:1553587216516,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:3226,&quot;slack&quot;:84.66,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:6,&quot;alias&quot;:&quot;Penstock Guage&quot;}},{&quot;id&quot;:57,&quot;timestamp&quot;:1555874682656,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:1585,&quot;slack&quot;:53.07,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:1,&quot;alias&quot;:&quot;Axle Motor&quot;},&quot;parent&quot;:null},{&quot;id&quot;:59,&quot;timestamp&quot;:1553671973838,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:4238,&quot;slack&quot;:33.08,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:1,&quot;alias&quot;:&quot;Axle Motor&quot;},&quot;parent&quot;:null},{&quot;id&quot;:60,&quot;timestamp&quot;:1566828588900,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:4686,&quot;slack&quot;:19.24,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}},{&quot;id&quot;:62,&quot;timestamp&quot;:1563263018996,&quot;status&quot;:&quot;RUNNING&quot;,&quot;operatingParams&quot;:{&quot;rotorSpeed&quot;:4005,&quot;slack&quot;:33.92,&quot;rootThreshold&quot;:0},&quot;asset&quot;:{&quot;id&quot;:2,&quot;alias&quot;:&quot;Main Rotor Shaft&quot;}}]}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">11:24:39.839 [print] {
+  &quot;page&quot;: 2,
+  &quot;per_page&quot;: 10,
+  &quot;total&quot;: 35,
+  &quot;total_pages&quot;: 4,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: 42,
+      &quot;timestamp&quot;: 1565692775077,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 3036,
+        &quot;slack&quot;: 78.6,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 0,
+        &quot;alias&quot;: &quot;Primary Rotor&quot;
+      },
+      &quot;parent&quot;: {
+        &quot;id&quot;: 2,
+        &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 46,
+      &quot;timestamp&quot;: 1552562195715,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 2281,
+        &quot;slack&quot;: 55.14,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 7,
+        &quot;alias&quot;: &quot;Counter Blades&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 47,
+      &quot;timestamp&quot;: 1547224303019,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 2044,
+        &quot;slack&quot;: 53.54,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 7,
+        &quot;alias&quot;: &quot;Counter Blades&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 49,
+      &quot;timestamp&quot;: 1560064864330,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 4721,
+        &quot;slack&quot;: 90.46,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 3,
+        &quot;alias&quot;: &quot;Secondary Rotor Shaft&quot;
+      },
+      &quot;parent&quot;: {
+        &quot;id&quot;: 7,
+        &quot;alias&quot;: &quot;Counter Blades&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 51,
+      &quot;timestamp&quot;: 1554411734690,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 2957,
+        &quot;slack&quot;: 87.8,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 4,
+        &quot;alias&quot;: &quot;Secondary Rotor&quot;
+      },
+      &quot;parent&quot;: {
+        &quot;id&quot;: 2,
+        &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 54,
+      &quot;timestamp&quot;: 1553587216516,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 3226,
+        &quot;slack&quot;: 84.66,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 6,
+        &quot;alias&quot;: &quot;Penstock Guage&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 57,
+      &quot;timestamp&quot;: 1555874682656,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 1585,
+        &quot;slack&quot;: 53.07,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 1,
+        &quot;alias&quot;: &quot;Axle Motor&quot;
+      },
+      &quot;parent&quot;: null
+    },
+    {
+      &quot;id&quot;: 59,
+      &quot;timestamp&quot;: 1553671973838,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 4238,
+        &quot;slack&quot;: 33.08,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 1,
+        &quot;alias&quot;: &quot;Axle Motor&quot;
+      },
+      &quot;parent&quot;: null
+    },
+    {
+      &quot;id&quot;: 60,
+      &quot;timestamp&quot;: 1566828588900,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 4686,
+        &quot;slack&quot;: 19.24,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 2,
+        &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+      }
+    },
+    {
+      &quot;id&quot;: 62,
+      &quot;timestamp&quot;: 1563263018996,
+      &quot;status&quot;: &quot;RUNNING&quot;,
+      &quot;operatingParams&quot;: {
+        &quot;rotorSpeed&quot;: 4005,
+        &quot;slack&quot;: 33.92,
+        &quot;rootThreshold&quot;: 0
+      },
+      &quot;asset&quot;: {
+        &quot;id&quot;: 2,
+        &quot;alias&quot;: &quot;Main Rotor Shaft&quot;
+      }
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
